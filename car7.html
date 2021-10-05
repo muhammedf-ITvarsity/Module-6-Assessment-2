@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Dodge Charger R/T</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+    	</div>
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/pic7.jpg" style="width:100%">
+    </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/pic7.1.jpg" style="width:100%">
+    </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/pic7.2.jpg" style="width:100%">
+    </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/pic7.3.jpg" style="width:100%">
+    </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/pic7.4.jpg" style="width:100%">
+    </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/pic7.5.jpg" style="width:100%">
+    </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/pic7.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Store">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic7.1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic7.2.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic7.3.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic7.4.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic7.5.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+    <p>THIS VERY SPECIAL TRACK INSPIRED AMERICAN MUSCLE CAR IS IN AMAZING CONDITION WITH VERY VERY LOW MILEAGE. ITS PERFECT FOR THE ENTHUSIAST AND COLLECTOR. THIS VERY SPECIAL MUSCLE CAR WS MAUNFACTURED TAKING INSPIRATION FROM THE CROWN JEWEL OF AMERICAN MOTORSPORT IN THE FORM OF THE NASCAR 500 CIRCUIT RACE. ITS NOT FOR THE FAINT OF HEART AND MUST BE SEEN. CALL US NOW TO TAKEADVANTAGE OF THIS GREAT DEAL AND MAKE THIS AMERICAN DREAM CAR YOURS TODAY.</p>
+    <p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+    
+    <div id="copyright">
+        <p>&copy; All Rights Reserved | Designed by Muhammed </p>
+    </div>
+</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>

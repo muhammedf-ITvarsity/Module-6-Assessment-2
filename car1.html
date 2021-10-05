@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Volkswagen Tiguan 2.0 TSI</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+        </div>
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/Pic1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/pic1.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/pic1.2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/pic1.3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/pic1.4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/pic1.5.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/Pic1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Store">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic1.1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic1.2.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic1.3.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic1.4.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic1.5.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+
+  </div>
+
+</div>
+
+<p>Under the hood of every 2019 Tiguan is a turbocharged four-cylinder that makes 184 horsepower; front-wheel drive is standard but Volkswagen's 4Motion all-wheel-drive system is optional. This is a sporty, fun-to-drive SUV with a smooth, willing engine and a well-coordinated automatic transmission.</p>
+<br>
+<p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+
+<div id="copyright">
+    <p>&copy; All Rights Reserved | Designed by Muhammed </p>
+</div>
+	</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>

@@ -1,0 +1,149 @@
+/*================== Universal styles =====================*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #363636;
+}
+
+p{
+    line-height: 190%;
+}
+
+a{
+    text-decoration: none;
+    color: teal;
+}
+
+
+/*==================== Header =======================*/
+
+#header{
+    padding: 60px 0px 40px 0px;
+    background-image: url('images/BG.jpg');
+    text-align: center;
+}
+
+#header h1{
+    letter-spacing: 0.1em;
+    font-size: 60px;
+    color: white;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8,
+
+    .1vw 0vw  0vw #862eceb7, .2vw 0vw 0vw #862eceb7, .4vw 0vw 0vw #862eceb7,
+    .1vw 0vw .1vw #862eceb7, .2vw 0vw .1vw #862eceb7, .4vw 0vw .1vw #862eceb7,
+    .1vw 0vw  2vw #862eceb7, .2vw 0vw 2vw #862eceb7, .4vw 0vw 2vw #862eceb7,
+
+    .1vw 0vw  1vw #7021b1b7, .2vw 0vw 1vw #7021b1b7, .4vw 0vw 5vw #7021b1b7,
+    .1vw 0vw  5vw #7021b1b7, .2vw 0vw 20vw #7021b1b7, .4vw 0vw 10vw #7021b1b7,
+    .1vw 0vw 10vw #7021b1b7, .2vw 0vw 30vw #7021b1b7, .4vw 0vw 10vw #7021b1b7;
+}
+
+#header p{
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+/*============ Banner =================*/
+
+#banner{
+    height: 400px;
+}
+
+#banner img{
+    width: 100%;
+    height: 500px;
+}
+
+/*======================== Menu ========================*/
+
+#menu{
+    background-color: #a35ce6;
+    height: 100px;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu a{
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100px;
+    color: rgb(5, 5, 5);
+
+    padding: 0 40px;
+    border: none;
+    display: block ;
+}
+
+#menu a:hover{
+    background-color: #ae25bbab;
+}
+
+/*============ Page =================*/
+
+#page{
+    min-height: 400px;
+    padding: 20px;
+}
+
+#page h2{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6d12c2;
+}
+
+/*============= Copyright ===================*/
+
+#copyright{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #040706;
+    padding-top: 55px;
+    clear: both;
+}
+
+#copyright p{
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*============ Gallery =================*/
+
+#gallery img{
+    width: 135px;
+    margin: 12px;
+    -moz-transition: -moz-transform 0.5s ease-in;
+	-webkit-transition: -webkit-transform 0.5s ease-in;
+	-o-transition: -o-transform 0.5s ease-in;
+}
+
+#gallery img:hover{
+	-moz-transform: scale(3);
+	-webkit-transform: scale(3);
+	-o-transform: scale(3);
+ }
+
+ 

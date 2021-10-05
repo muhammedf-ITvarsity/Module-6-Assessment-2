@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>Mercedes-AMG G-Class G63</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+        </div>
+</div>
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/pic6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/pic6.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/pic6.2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/pic6.3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/pic6.4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/pic6.5.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/pic6.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Store">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic6.1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic6.2.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic6.3.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic6.4.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic6.5.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+
+</div>
+    <p>Unparalleled Benz Perfection - Brute V8 Bi-Turbo Power - Magnificent Yacht Blue Leather In Two-tone With Black Nappa - 22" Alloys - AMG Driver's Package - Active Multicont Seat Package - Parking Pack With 360 Degree Cameras - Stainless Steel Pack - URBAN GUARD Vehicle Protection - AMG Night Package - Navigation - Burmester Sound - Glass Roof And More - Amazingly Well Equipped - Available Immediately!!</p>
+    <p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+    
+    <div id="copyright">
+        <p>&copy; All Rights Reserved | Designed by Muhammed </p>
+    </div>
+</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>

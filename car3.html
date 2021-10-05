@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Auto4Sale</title>
+	   <link rel="stylesheet" href="style1.css">
+	</head>
+	<body>
+        <center><h1>1968 Ford Mustang Shelby GT500</h1></center>
+        <div class="navbar">
+  <a href="sale.html">Back</a>
+    	</div>
+
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/pic3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/pic3.1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/pic3.2.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/pic3.3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/pic3.4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/pic3.5.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/pic3.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Store">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic3.1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic3.2.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/pic3.3.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic3.4.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+
+    <div class="column">
+        <img class="demo cursor" src="images/pic3.5.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+  </div>
+</div>
+    <p>It is based on the 1967 Mustang and is equipped with a FE 428 cu in (7.0 L) Police-Interceptor V8 engine topped with an aluminum mid-rise intake and 2X4-barrel 600 CFM Holley carburetors producing 355 bhp (360 PS; 265 kW) at 5,400 rpm and 420 lb⋅ft (569 N⋅m) at 3200 rpm of torque.</p>
+    <p>For More details and Price you can contact us <a href="contact.html">here...</a></p>
+
+    <div id="copyright">
+        <p>&copy; All Rights Reserved | Designed by Muhammed </p>
+    </div>
+</body>
+    <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</html>
